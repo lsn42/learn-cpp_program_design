@@ -1,30 +1,34 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
+
 
 using namespace std;
 
 class Point
 {
-public:
+ public:
   Point(int x, int y): x(x), y(y){};
-  int getX() const {return this->x;}
-  int getY() const {return this->y;}
+  int getX() const { return this->x; }
+  int getY() const { return this->y; }
   double Dist(Point p)
   {
-    return sqrt((this->getX()-p.getX())*(this->getX()-p.getX())+((this->getY()-p.getY())*(this->getY()-p.getY())));
+    return sqrt((this->getX() - p.getX()) * (this->getX() - p.getX()) +
+      ((this->getY() - p.getY()) * (this->getY() - p.getY())));
   }
   double Dist(const Point p) const
   {
-    return sqrt((this->getX()-p.getX())*(this->getX()-p.getX())+((this->getY()-p.getY())*(this->getY()-p.getY())));
+    return sqrt((this->getX() - p.getX()) * (this->getX() - p.getX()) +
+      ((this->getY() - p.getY()) * (this->getY() - p.getY())));
   }
-private:
+
+ private:
   int x, y;
 };
 
 int main()
 {
   const int x1 = 2, y1 = 2, x2 = 3, y2 = 3;
-  Point myp1(1,1), myp2(4,5);
+  Point myp1(1, 1), myp2(4, 5);
   const Point p1(x1, y1), p2(x2, y2);
 
   cout << "myp1.Dist(myp2): " << myp1.Dist(myp2) << endl;

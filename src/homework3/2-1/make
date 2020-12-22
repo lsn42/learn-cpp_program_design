@@ -1,0 +1,1 @@
+C:\msys64\mingw64\bin\g++.exe -Wall -DUNICODE -std=c++11 -ggdb src\homework3\2-1\A.cpp src\homework3\2-1\B.cpp src\homework3\2-1\main.cpp -o build\src\homework3\2-1\main.exe

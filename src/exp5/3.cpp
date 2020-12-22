@@ -1,31 +1,29 @@
 #include <iostream>
 using namespace std;
- 
-class Engine {
-public:
-	virtual void start();
+
+class Engine
+{
+ public:
+  virtual void start();
 };
- 
-void Engine::start()
+
+void Engine::start() { cout << "starting Engine\n"; }
+
+class FordTaurus //请定义FordTaurus类
 {
-	cout << "starting Engine\n";
-}
- 
-class FordTaurus  //请定义FordTaurus类
-{
-public:
+ public:
   Engine engine;
   void start();
 };
-void FordTaurus::start()  //请完善函数功能
+void FordTaurus::start() //请完善函数功能
 {
-	cout << "starting FordTaurus\n";
+  cout << "starting FordTaurus\n";
   this->engine.start();
 }
- 
+
 int main()
 {
-	FordTaurus taurus;
-	taurus.start();
-	return 0;
+  FordTaurus taurus;
+  taurus.start();
+  return 0;
 }

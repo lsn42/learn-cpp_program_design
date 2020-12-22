@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-class Ctyre {
+class Ctyre
+{
  private:
   int radius;
   int width;
@@ -10,12 +11,14 @@ class Ctyre {
   Ctyre(Ctyre& ctyre) { cout << "Ctyre copy constructor~" << endl; }
   ~Ctyre() { cout << "Ctyre destructor~" << endl; }
 };
-class Cengine {
+class Cengine
+{
  public:
   Cengine() { cout << "Cengine constructor~" << endl; }
   ~Cengine() { cout << "Cengine destructor~" << endl; }
 };
-class Ccar {
+class Ccar
+{
  private:
   Ctyre tyre;
   Cengine engine;
@@ -25,16 +28,15 @@ class Ccar {
   // Ccar(Ccar& ccar) : engine(ccar.engine), tyre(ccar.tyre) {
   //   cout << "Ccar  copy constructor~" << endl;
   // }
-  Ccar(Ccar & ccar){
-        cout<<"Ccar  copy constructor~"<<endl;
-  }
+  Ccar(Ccar& ccar) { cout << "Ccar  copy constructor~" << endl; }
   void show_1(const Ccar ccar);
   void show_2(const Ccar& ccar);
   ~Ccar() { cout << "Ccar destructor~" << endl; }
 };
 void Ccar::show_1(const Ccar ccar) { cout << "show ccar~" << endl; }
 void Ccar::show_2(const Ccar& ccar) { cout << "show ccar~" << endl; }
-int main() {
+int main()
+{
   Ccar car_1;
   cout << endl;
 

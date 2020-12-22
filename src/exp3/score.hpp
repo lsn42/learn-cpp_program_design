@@ -3,12 +3,14 @@
 #define SCORE_HPP
 class score
 {
-public:
+ public:
   score();
-  score(std::string number, std::string name, double pinshi_score, double final_score);
+  score(std::string number, std::string name, double pinshi_score,
+    double final_score);
   void count();
   void ShowScore();
-private:
+
+ private:
   std::string number;
   std::string name;
   double pinshi_score;
