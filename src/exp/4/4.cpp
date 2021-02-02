@@ -38,15 +38,24 @@ class Dog: public Mammal
   myColor itsColor;
 };
 //给出Mammal类构造函数的定义：Mammal::Mammal(){}
-Mammal::Mammal() { cout << "Mammal constructor..." << endl; }
-Mammal::~Mammal() { cout << "Mammal destructor..." << endl; }
+Mammal::Mammal()
+{
+  cout << "Mammal constructor..." << endl;
+}
+Mammal::~Mammal()
+{
+  cout << "Mammal destructor..." << endl;
+}
 //给出DOG类构造函数的定义：Dog::Dog(){}
 Dog::Dog()
 {
   setAge(1);
   cout << "Dog constructor..." << endl;
 }
-Dog::~Dog() { cout << "Dog destructor..." << endl; }
+Dog::~Dog()
+{
+  cout << "Dog destructor..." << endl;
+}
 int main()
 {
   Dog jack;

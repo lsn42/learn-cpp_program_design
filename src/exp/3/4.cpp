@@ -3,7 +3,6 @@
 
 #include "score.hpp"
 
-
 using namespace std;
 
 int main()

@@ -31,7 +31,10 @@ Point::Point(Point &p)
   this->y = p.y;
   cout << "copy constrcutor" << endl;
 }
-void Point::Print() { cout << "(" << this->x << ", " << this->y << ")"; }
+void Point::Print()
+{
+  cout << "(" << this->x << ", " << this->y << ")";
+}
 
 int main()
 {

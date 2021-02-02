@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class A //∏∏¿‡A
+class A //Áà∂Á±ªA
 {
  private:
   int a;
@@ -10,7 +10,7 @@ class A //∏∏¿‡A
   void print() { cout << a << endl; }
 };
 
-class B //∏∏¿‡B
+class B //Áà∂Á±ªB
 {
  private:
   int b;
@@ -20,7 +20,7 @@ class B //∏∏¿‡B
   void print() { cout << b << endl; }
 };
 
-class C: public A, public B //◊”¿‡CºÃ≥–◊‘A,B¿‡
+class C: public A, public B //Â≠êÁ±ªCÁªßÊâøËá™A,BÁ±ª
 {
  private:
   int c;
@@ -38,6 +38,6 @@ int main()
 {
   C x(5, 8, 10);
   x.get_ab();
-  x.A::print(); //œ£Õ˚ ‰≥ˆAµƒ≥…‘±a
+  x.A::print(); //Â∏åÊúõËæìÂá∫AÁöÑÊàêÂëòa
   return 0;
 }

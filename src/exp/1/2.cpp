@@ -13,16 +13,21 @@ class CPerson
   int age;
   char *name;
 };
-CPerson::CPerson() {}
+CPerson::CPerson()
+{
+}
 CPerson::CPerson(int age, string name)
 {
   this->age = age;
   this->name = (char *)(name.data());
 }
-void CPerson::Print() { cout << "name=" << name << ",age=" << age << endl; }
+void CPerson::Print()
+{
+  cout << "name=" << name << ",age=" << age << endl;
+}
 int main()
 {
-  CPerson ps(23, "å¼ ä¸‰");
+  CPerson ps(23, "ÕÅÈý");
   ps.Print();
   getchar();
 }

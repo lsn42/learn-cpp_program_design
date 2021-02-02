@@ -18,4 +18,7 @@ Person::Person(char *xname, int xage, int xsalary, char *xtel)
   this->salary = xsalary;
   memcpy(this->tel, xtel, 8);
 }
-int main() { Person p("Alice", 20, 2147483647, "12345678"); }
+int main()
+{
+  Person p("Alice", 20, 2147483647, "12345678");
+}

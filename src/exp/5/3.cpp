@@ -7,7 +7,10 @@ class Engine
   virtual void start();
 };
 
-void Engine::start() { cout << "starting Engine\n"; }
+void Engine::start()
+{
+  cout << "starting Engine\n";
+}
 
 class FordTaurus //请定义FordTaurus类
 {

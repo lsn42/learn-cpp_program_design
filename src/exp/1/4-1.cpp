@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class smallone
@@ -9,16 +10,15 @@ class smallone
     x = sma;
     cout << "sm constr:" << sma << "\n";
   }
-
   int getX() { return x; }
-  ~smallone() { cout << "璋冪敤浜嗘瀽鏋勫嚱鏁伴噴鏀惧璞★紒\n"; }
+  ~smallone() { cout << "调用了析构函数释放对象！\n"; }
 
  private:
   int x;
 };
 void fn(int n)
 {
-  static smallone sm(n);
+  smallone sm(n);
   cout << "in function fn with n=" << n << "  sm.x=" << sm.getX() << endl;
 }
 int main()

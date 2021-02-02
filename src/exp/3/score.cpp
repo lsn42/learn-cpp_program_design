@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 
-
 using namespace std;
 
 score::score(): number("0"), name("null"), pinshi_score(0), final_score(0)
